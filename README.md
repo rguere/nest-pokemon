@@ -4,28 +4,35 @@
 
 ## Ejecutar en desarrollo
 
-1._ Clonar el repositorio
+1. Clonar el repositorio
 
-2._ Ejecutar
+2. Ejecutar
 
 ```
-
 yarn install
+```
+3. Pre requisito: tener instalado Nest CLI instalado
 
 ```
-3._ Pre requisito: tener instalado Nest CLI instalado
-
+npm i -g @nestjs/cli
 ```
 
-npi i -g @nestjs/cli
-
+4. Levanatar la base de datos
 ```
-4._ Levanatar la base de datos
-
-```
-
 docker-compose up -d
+```
 
+5. Clonar el archivo ```.env.template``` y renombrar la copia a ```.env```
+
+6. Asignar valores a las variables de entorno definidas en  ```.env```
+
+7. Ejecutar la aplicacion en dev:
+```
+yarn start:dev
+```
+8. Reconstruir la base de datos con la semilla
+```
+http://localhost:3000/api/v2/seed
 ```
 
 ## Stack usado
